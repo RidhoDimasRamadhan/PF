@@ -3,397 +3,948 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Ridho Dimas Ramadhan</title>
-    
+
+    <title>Ridho Dimas Ramadhan | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Ridho Dimas Ramadhan - Full Stack Developer specializing in React, Laravel, Node.js, and modern web technologies.">
+    <meta name="author" content="Ridho Dimas Ramadhan">
+
+    <meta property="og:site_name" content="Ridho Dimas Ramadhan" />
+    <meta property="og:title" content="Ridho Dimas Ramadhan | Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Developer specializing in React, Laravel, Node.js, and modern web technologies." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	
+    <!-- 3D Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
+<body data-spy="scroll" data-target=".fixed-top" data-theme="dark">
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
+        <div class="container-fluid px-3 px-lg-5">
+            <a class="navbar-brand logo-text page-scroll" href="#header">
+                <span class="brand-gradient">RD</span>
+            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-sun theme-icon-light"></i>
+                <i class="fas fa-moon theme-icon-dark"></i>
+            </button>
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link page-scroll" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/CV/Resume_Ridho Dimas Ramadhan.pdf" download>CV</a>
+                        <a class="nav-link page-scroll" href="#faq">FAQ</a>
                     </li>
-              
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav" href="CV/Resume_Ridho Dimas Ramadhan.pdf" download>Download CV</a>
+                    </li>
                 </ul>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
+        </div>
+    </nav>
 
+    <!-- Mobile Nav Backdrop -->
+    <div class="offcanvas-backdrop" id="navBackdrop"></div>
 
-    <!-- Header -->
+    <!-- Hero Header -->
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container" ></div>>
-                        <h1 class="h1-large" data-aos="zoom-in-down" data-aos-duration="1000">I love to create beautiful and efficient websites</h1>
-                        <a class="btn-solid-lg page-scroll" href="/CV/Resume_Ridho Dimas Ramadhan.pdf" download="" data-aos="zoom-out-right" data-aos-duration="1000">Download CV</a>
-                        <a class="btn-outline-lg page-scroll" href="https://wa.me/+6289501300359" data-aos="zoom-out-right" data-aos-duration="1000"><i class="fas fa-user" ></i>Contact Me</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+            <!-- Floating 3D Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
 
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-aos="fade-down" data-aos-duration="600">
+                            <span class="badge-dot"></span> Available for opportunities
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Hi, I'm <span class="text-gradient">Ridho</span><br>
+                            <span id="typed-output"></span><span class="typed-cursor">|</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            I craft beautiful, performant web applications from concept to deployment. Passionate about clean code and exceptional user experiences.
+                        </p>
+                        <div class="hero-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <a class="btn-primary-custom" href="CV/Resume_Ridho Dimas Ramadhan.pdf" download>
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                            <a class="btn-outline-custom" href="https://wa.me/+6289501300359" target="_blank">
+                                <i class="fas fa-paper-plane"></i> Contact Me
+                            </a>
+                        </div>
+                        <div class="hero-social" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <a href="https://github.com/RidhoDimasRamadhan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/ridhodimasr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ridho-dimas-ramadhan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <!-- Profile Photo -->
+                        <div class="profile-photo-wrapper">
+                            <div class="profile-photo-ring"></div>
+                            <img src="images/fotoRidho.jpeg" alt="Ridho Dimas Ramadhan" class="profile-photo">
+                            <div class="profile-status">
+                                <span class="status-dot"></span>
+                            </div>
+                        </div>
+                        <!-- Code Window (desktop only) -->
+                        <div class="code-window tilt-code d-none d-lg-block">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="code-title">developer.js</span>
+                            </div>
+                            <div class="code-body">
+                                <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Ridho Dimas Ramadhan"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Dev"</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Building things"</span>,
+  <span class="code-func">hire</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Let's build!"</span>;
+  }
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="page-scroll">
+                <span></span>
+            </a>
+        </div>
+    </header>
 
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
+    <!-- Stats Counter -->
+    <section class="stats-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-     >
-                        <h2 data-aos="fade-left">Hi there I'm Ridho,</h2>
-                        <p>I like the creation of a website from concept to publication. I always try to improve the efficiency of the code to get the best performance.</p>
+            <div class="stats-grid" data-aos="fade-up">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-suffix">+ Yr</div>
+                    <div class="stat-label">Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="stat-number" data-target="19">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Tech Stack</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <br>
-                         <h2>Tech Stack </h2>
-                         </strong>
-                         <img src="images/details-icon-html.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/details-icon-css.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/details-icon-javascript.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/php.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/physics.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/laravel.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/express.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/jquery.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/nodejs.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/mongodb.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/mysql.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/postgre.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/bootstrap.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/Tailwindcss.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         <img src="images/git.png" alt="alternative" style="width:2.5rem;height:2.5rem;margin-right:.5rem; margin-bottom: .5rem;">
-                         
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container second" data-aos="fade-down"
-     data-aos-easing="linear"
->
-                        <h2>Activities</h2>
-                        <div class="time">Jun 2023</div>
-                        <p>Gemastik Competition - Frontend Developer</p>
-                        <br>
-                        <div class="time">May 2023 - Aug 2023</div>
-                        <p>Mathematics Website Application for Scientific Writing</p>
-                        <br>
-                        <div class="time">May 2023 - Jun 2023</div>
-                        <p>Technology Innovation Competition at The City Level North Jakarta - Frontend Developer </p>
-                        <br>
-                        <div class="time">Jul 2022 - Nov 2022</div>
-                        <p>USB (Unlimited Software Builder) Competition - Frontend Developer</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container third" data-aos="fade-right"
-      data-aos-offset="300"
-     data-aos-easing="ease-in-sine"
-    >
-                        <h2>Work Experience</h2>
-                        <div class="time">Aug 2023 - Dec 2023</div>
-                        <p>PT. Temas Tbk. - IT Developer Intern</p>
-                        <br>
-                        <div class="time">2023 - Present</div>
-                        <p>Freelance Web Application</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
-
-
-    <!-- Details -->
-	<div class="split" >
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-kiri" >
-                    <div class="text-container first">
-                        <h1 data-aos="fade-down">Achivement</h1>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Ideas Into <span class="text-gradient">Digital Reality</span></h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card tilt-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Who I Am</h3>
+                        <p>A passionate Full Stack Developer who loves creating websites from concept to publication. I always strive to improve code efficiency for the best performance.</p>
+                        <div class="tech-stack-grid">
+                            <img src="images/details-icon-html.png" alt="HTML" title="HTML">
+                            <img src="images/details-icon-css.png" alt="CSS" title="CSS">
+                            <img src="images/details-icon-javascript.png" alt="JavaScript" title="JavaScript">
+                            <img src="images/php.png" alt="PHP" title="PHP">
+                            <img src="images/physics.png" alt="React" title="React">
+                            <img src="images/nextjs.svg" alt="Next.js" title="Next.js" class="icon-dark-bg">
+                            <img src="images/laravel.png" alt="Laravel" title="Laravel">
+                            <img src="images/codeigniter.svg" alt="CodeIgniter 4" title="CodeIgniter 4">
+                            <img src="images/express.png" alt="Express" title="Express">
+                            <img src="images/jquery.png" alt="jQuery" title="jQuery">
+                            <img src="images/nodejs.png" alt="Node.js" title="Node.js">
+                            <img src="images/mongodb.png" alt="MongoDB" title="MongoDB">
+                            <img src="images/mysql.png" alt="MySQL" title="MySQL">
+                            <img src="images/postgre.png" alt="PostgreSQL" title="PostgreSQL">
+                            <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            <img src="images/Tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS">
+                            <img src="images/git.png" alt="Git" title="Git">
+                            <img src="images/postman.svg" alt="Postman" title="Postman">
+                            <img src="images/phpmyadmin.svg" alt="phpMyAdmin" title="phpMyAdmin">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-card tilt-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Activities</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">Jun 2023</span>
+                                <p>Gemastik Competition - Frontend Developer</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">May - Aug 2023</span>
+                                <p>Mathematics Website Application for Scientific Writing</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">May - Jun 2023</span>
+                                <p>Technology Innovation Competition (City Level North Jakarta) - Frontend Developer</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Jul - Nov 2022</span>
+                                <p>USB (Unlimited Software Builder) Competition - Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-card tilt-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">Dec 2024 - Present</span>
+                                <p>PT. Mitra Lestari Motorindo (Mitra2000)<br><strong>Full Stack Developer</strong></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Nov 2024 - Feb 2025</span>
+                                <p>PT. Sinergi Merah Putih<br><strong>Full Stack Developer</strong></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">Aug - Dec 2023</span>
+                                <p>PT. Temas Tbk.<br><strong>IT Developer Intern</strong></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 - Present</span>
+                                <p>Freelance<br><strong>Web Application Developer</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-lg-9 col-kanan" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-                        <div class="acv1">
-                           <h4 style="text-align: center;" >2nd place USB (Unlimited Software Builder) Competition</h4>
-                            <div class="wrapper">
-      <ul class="carousel">
-        <li class="card usb1"></li>
-        <li class="card usb2"></li>
-        <li class="card usb3"></li>
-        <li class="card usb4"></li>
-      </ul>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Awards & <span class="text-gradient">Recognition</span></h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="achievement-card tilt-card">
+                        <div class="achievement-badge">
+                            <i class="fas fa-medal"></i>
+                            <span>2nd Place</span>
+                        </div>
+                        <h4>USB (Unlimited Software Builder) Competition</h4>
+                        <div class="gallery-slider">
+                            <div class="gallery-track">
+                                <img src="images/usb1.jpeg" alt="USB Competition 1">
+                                <img src="images/usb2.jpeg" alt="USB Competition 2">
+                                <img src="images/usb3.jpeg" alt="USB Competition 3">
+                                <img src="images/usb4.jpeg" alt="USB Competition 4">
+                            </div>
+                            <div class="gallery-nav">
+                                <span class="gallery-dot active"></span>
+                                <span class="gallery-dot"></span>
+                                <span class="gallery-dot"></span>
+                                <span class="gallery-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="achievement-card tilt-card">
+                        <div class="achievement-badge">
+                            <i class="fas fa-medal"></i>
+                            <span>2nd Place</span>
+                        </div>
+                        <h4>Technology Innovation Competition</h4>
+                        <div class="gallery-slider">
+                            <div class="gallery-track">
+                                <img src="images/pmd1.jpeg" alt="PMD Competition 1">
+                                <img src="images/pmd2.jpeg" alt="PMD Competition 2">
+                                <img src="images/pmd3.jpeg" alt="PMD Competition 3">
+                            </div>
+                            <div class="gallery-nav">
+                                <span class="gallery-dot active"></span>
+                                <span class="gallery-dot"></span>
+                                <span class="gallery-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">A selection of projects that showcase my skills and experience</p>
+            </div>
+            <div class="projects-grid mt-5">
+
+                <!-- Project: Landing Page -->
+                <div class="project-card tilt-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <a href="landingpage.html">
+                            <img src="images/landingPage_desktop.png" alt="Landing Page Product Showcase" loading="lazy">
+                            <div class="project-overlay">
+                                <span><i class="fas fa-arrow-right"></i> View Details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h4>Landing Page Product Showcase</h4>
+                        <p>Dynamic product landing page with variant/color switching & e-commerce integration</p>
+                        <div class="project-tech">
+                            <img src="images/php.png" alt="PHP" title="PHP">
+                            <img src="images/codeigniter.svg" alt="CodeIgniter 4" title="CodeIgniter 4">
+                            <img src="images/details-icon-javascript.png" alt="JavaScript" title="JavaScript">
+                            <img src="images/jquery.png" alt="jQuery" title="jQuery">
+                            <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                        </div>
+                        <a href="landingpage.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <a href="project.html">
+                            <img src="images/Bus1.png" alt="NaradaTrans Bus Fleet" loading="lazy">
+                            <div class="project-overlay">
+                                <span><i class="fas fa-arrow-right"></i> View Details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h4>NaradaTrans Bus Fleet</h4>
+                        <p>Website-based bus fleet management application</p>
+                        <div class="project-tech">
+                            <img src="images/mongodb.png" alt="MongoDB" title="MongoDB">
+                            <img src="images/express.png" alt="Express" title="Express">
+                            <img src="images/physics.png" alt="React" title="React">
+                            <img src="images/nodejs.png" alt="Node.js" title="Node.js">
+                            <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                        </div>
+                        <a href="project.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <a href="keuangan.html">
+                            <img src="images/Keuangan.png" alt="Finance Monitor" loading="lazy">
+                            <div class="project-overlay">
+                                <span><i class="fas fa-arrow-right"></i> View Details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h4>Store Finance Monitor</h4>
+                        <p>Application to monitor finances for stores</p>
+                        <div class="project-tech">
+                            <img src="images/details-icon-html.png" alt="HTML" title="HTML">
+                            <img src="images/details-icon-css.png" alt="CSS" title="CSS">
+                            <img src="images/php.png" alt="PHP" title="PHP">
+                            <img src="images/jquery.png" alt="jQuery" title="jQuery">
+                            <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            <img src="images/mysql.png" alt="MySQL" title="MySQL">
+                        </div>
+                        <a href="keuangan.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <a href="biseksi.html">
+                            <img src="images/biseksi.png" alt="Biseksi Calculator" loading="lazy">
+                            <div class="project-overlay">
+                                <span><i class="fas fa-arrow-right"></i> View Details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h4>Biseksi & Regula Falsi Calculator</h4>
+                        <p>Quick calculation app for non-linear equation systems</p>
+                        <div class="project-tech">
+                            <img src="images/details-icon-html.png" alt="HTML" title="HTML">
+                            <img src="images/details-icon-css.png" alt="CSS" title="CSS">
+                            <img src="images/details-icon-javascript.png" alt="JavaScript" title="JavaScript">
+                            <img src="images/Tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS">
+                        </div>
+                        <a href="biseksi.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <a href="kotamuwisataku.html">
+                            <img src="images/KotamuWisataku.png" alt="KotamuWisataku" loading="lazy">
+                            <div class="project-overlay">
+                                <span><i class="fas fa-arrow-right"></i> View Details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h4>KotamuWisataku</h4>
+                        <p>Website-based tourist attraction recommendation application</p>
+                        <div class="project-tech">
+                            <img src="images/laravel.png" alt="Laravel" title="Laravel">
+                            <img src="images/jquery.png" alt="jQuery" title="jQuery">
+                            <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            <img src="images/mysql.png" alt="MySQL" title="MySQL">
+                        </div>
+                        <a href="kotamuwisataku.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Geometric Background -->
+    <section class="threejs-section">
+        <canvas id="threejs-canvas"></canvas>
+        <div class="threejs-overlay">
+            <div class="container text-center">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Ready to Build <span class="text-gradient">Something Great?</span></h2>
+                    <p class="section-subtitle" style="margin-bottom: 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="threejs-cta">
+                        <a class="btn-primary-custom" href="https://wa.me/+6289501300359" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Let's Talk
+                        </a>
+                        <a class="btn-outline-custom" href="CV/Resume_Ridho Dimas Ramadhan.pdf" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="faq-accordion">
+                        <div class="faq-item" data-aos="fade-up">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                What technologies do you use for Frontend & Backend Development?
+                            </button>
+                            <div class="faq-answer">
+                                <p>For frontend development, I primarily use React.js for building dynamic and responsive user interfaces, complemented by Tailwind CSS or Bootstrap for efficient styling. I also incorporate Laravel for full-stack projects. Additionally, I use Node.js with Express.js for creating APIs and managing server-side operations.<br><br>
+                                On the backend, I prefer MongoDB for NoSQL databases due to its flexibility and scalability. For relational databases, I use PostgreSQL or MySQL for their reliability and robust support for structured data.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" data-aos="fade-up">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                How do you ensure responsive and user-friendly websites?
+                            </button>
+                            <div class="faq-answer">
+                                <p>I follow a mobile-first approach, ensuring that each component is fully responsive before building the desktop layout. I use CSS media queries and frameworks like Bootstrap or Tailwind CSS for consistent responsiveness. For user-friendliness, I focus on accessibility (a11y) standards, such as ARIA labels and keyboard navigation, and test designs across multiple devices and screen sizes.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" data-aos="fade-up">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                How do you handle API integration and data flow?
+                            </button>
+                            <div class="faq-answer">
+                                <p>I create and consume RESTful APIs to establish data flow between the frontend and backend. I design APIs with clear endpoints and data structures, allowing seamless communication. For integration, I use tools like Axios or the native Fetch API. On the backend, I use middleware to handle CORS and request validation, ensuring secure data transfer.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" data-aos="fade-up">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                How do you handle cross-browser compatibility?
+                            </button>
+                            <div class="faq-answer">
+                                <p>I test websites across multiple browsers to identify compatibility issues early. I use tools like BrowserStack and ensure compatibility with modern browsers while adding graceful degradation or polyfills for older browsers if required.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" data-aos="fade-up">
+                            <button class="faq-question" onclick="toggleFaq(this)">
+                                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                                Can you work with backend technologies?
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, I have experience working with backend technologies such as Node.js, Express, and RESTful APIs. Understanding the backend allows me to collaborate more effectively with backend teams, optimize API interactions, and build seamless integrations, which enhances the user experience and ensures smooth data handling on the frontend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full view">
     </div>
-                       </div>
-                       <div class="acv2" >
-                            <h4 style="text-align: center">2nd place Technology Innovation Competition</h4>
-<!-- <div class="kartu">
-      <div class="card pmd1">
-        <img src="./images/pmd1.jpeg" alt="">
-      </div>
-      <div class="card pmd2">
-        <img src="./images/pmd2.jpeg" alt="">
-      </div>
-      <div class="card pmd3">
-          <img src="./images/pmd3.jpeg" alt="">
-      </div>
-</div> -->
-
-  <div class="wrapper">
-      <ul class="carousel">
-        <li class="card pmd1"></li>
-        <li class="card pmd2"></li>
-        <li class="card pmd3"></li>
-      </ul>
-    </div>
-    </div>
-                       </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        
-
-    </div> <!-- end of split -->
-    <!-- end of details -->
-
-
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="h2-heading" data-aos="fade-up">PROJECTS</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row mt-4">
-                <div class="col-lg-12">
-                    <div class="text-container" data-aos="fade-left">
-                        <p style="text-align: center;">Application Based on the NaradaTrans Bus Fleet Website
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/Bus1.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        </p><strong>Tech Stack : </strong><img src="images/mongodb.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/express.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/physics.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/nodejs.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/bootstrap.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-css.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-html.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;"> <a class="blue float-right text-decoration-none" href="project.html">details</a>
-                    </div> <!-- end of text-container -->
-                    <br>
-
-                    <div class="text-container" data-aos="fade-right">
-                        <p style="text-align: center;">Application Based on the NaradaTrans Bus Fleet Website</p>
-                        <div class="image-container">
-                            <a href="keuangan.html">
-                                <img class="img-fluid" src="./images/Keuangan.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                      <strong>Tech Stack : </strong><img src="images/details-icon-html.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-css.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/php.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/jquery.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/bootstrap.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/mysql.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><a class="blue float-right text-decoration-none" href="keuangan.html">details</a>
-                      <br>
-
-                    </div> <!-- end of text-container -->
-                    <div class="text-container" data-aos="fade-left">
-                          <p style="text-align: center;">Application to monitor finances for stores</p>
-                        <div class="image-container">
-                            <a href="biseksi.html">
-                                <img class="img-fluid" src="./images/biseksi.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <strong>Tech Stack : </strong><img src="images/details-icon-html.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-css.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-javascript.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/Tailwindcss.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><a class="blue float-right text-decoration-none" href="keuangan.html">details</a>
-                        <br>
-                        
-                    </div> <!-- end of text-container -->
-                    <div class="text-container" data-aos="fade-right">
-                        <p style="text-align: center;">Website-Based Tourist Attraction Recommendation Application</p>
-                        <div class="image-container">
-                            <a href="kotamuwisataku.html">
-                                <img class="img-fluid" src="./images/KotamuWisataku.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                           <strong>Tech Stack : </strong><img src="images/details-icon-html.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/details-icon-css.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/laravel.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/jquery.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/bootstrap.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><img src="images/mysql.png" alt="alternative" style="width: 1.7rem;height: 1.7rem;margin-right:.5rem;"><a class="blue float-right text-decoration-none" href="keuangan.html">details</a>
-                        <br>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
-
-
-    <!-- Questions -->
-    <div class="accordion-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Frequent questions</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    What technologies do you use for Frontend Development & Backend Development?
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                   For frontend development, I primarily use React.js for building dynamic and responsive user interfaces, complemented by Tailwind CSS or Bootstrap for efficient styling and layout design. I also incorporate Laravel for certain frontend aspects when it’s part of a full-stack project, as it helps streamline the process. Additionally, I use Node.js with Express.js for creating APIs and managing server-side operations that support frontend functionality.
-                                   <br><br>
-
-On the backend, if I’m working with NoSQL databases, I prefer MongoDB due to its flexibility with unstructured data and scalability. For projects that require relational databases, I use PostgreSQL or MySQL for their reliability and robust support for structured data. This combination allows me to adapt to various project needs effectively and build scalable, high-performance applications
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How do you ensure that a website is responsive and user-friendly on all devices?
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    I follow a mobile-first approach, ensuring that each component is fully responsive before building the desktop layout. I use CSS media queries and frameworks like Bootstrap or Tailwind CSS for consistent responsiveness. For user-friendliness, I focus on accessibility (a11y) standards, such as ARIA labels and keyboard navigation, and test designs across multiple devices and screen sizes.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                     How do you handle API integration and data flow between frontend and backend?
-                                </button>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    I create and consume RESTful APIs to establish data flow between the frontend and backend. I design APIs with clear endpoints and data structures, allowing seamless communication. For integration, I use tools like Axios or the native Fetch API to make HTTP requests from the frontend to the backend. On the backend, I use middleware to handle CORS and request validation, ensuring secure data transfer
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How do you handle cross-browser compatibility issues?
-                                </button>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    I test websites across multiple browsers to identify compatibility issues early. I use tools like BrowserStack and ensure compatibility with modern browsers while adding graceful degradation or polyfills for older browsers if required.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Can you work with backend technologies, and how does that benefit frontend development?
-                                </button>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Yes, I have experience working with backend technologies such as Node.js, Express, and RESTful APIs. Understanding the backend allows me to collaborate more effectively with backend teams, optimize API interactions, and build seamless integrations, which enhances the user experience and ensures smooth data handling on the frontend
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end of accordion -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of accordion-1 -->
-    <!-- end of questions -->
-
 
     <!-- Footer -->
-    <div class="footer bg-gray">
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="https://github.com/RidhoDimasRamadhan" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/ridhodimasr" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="www.linkedin.com/in/ridho-dimas-ramadhan" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+            <div class="footer-content text-center">
+                <div class="footer-logo">
+                    <span class="brand-gradient">RD</span>
+                </div>
+                <p class="footer-text">Let's build something amazing together.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/RidhoDimasRamadhan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ridhodimasr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ridho-dimas-ramadhan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Ridho Dimas Ramadhan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Ridho Dimas Ramadhan</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="https://kit.fontawesome.com/08692cf6f2.js" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        /* Fix #5: Scroll to top on load */
+        window.scrollTo(0, 0);
 
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        var isMobile = window.innerWidth < 768;
+        var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        var vantaEffect = null;
+
+        /* Lightbox */
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        /* Gallery Sliders */
+        document.querySelectorAll('.gallery-slider').forEach(function(slider) {
+            var track = slider.querySelector('.gallery-track');
+            var dots = slider.querySelectorAll('.gallery-dot');
+            var imgs = track.querySelectorAll('img');
+            var idx = 0;
+
+            function goTo(i) {
+                if (i < 0) i = imgs.length - 1;
+                if (i >= imgs.length) i = 0;
+                idx = i;
+                track.style.transition = 'transform 0.35s ease';
+                track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+                dots.forEach(function(d, j) { d.classList.toggle('active', j === idx); });
+            }
+
+            // Dot clicks
+            dots.forEach(function(dot, i) {
+                dot.addEventListener('click', function() { goTo(i); });
+            });
+
+            // Click on track = lightbox (shows current image)
+            track.addEventListener('click', function() {
+                openLightbox(imgs[idx].src);
+            });
+
+            // Touch swipe (mobile only)
+            var startX = 0, diff = 0;
+            track.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+                diff = 0;
+                track.style.transition = 'none';
+            }, { passive: true });
+            track.addEventListener('touchmove', function(e) {
+                diff = e.touches[0].clientX - startX;
+                track.style.transform = 'translateX(' + (-(idx * 100) + (diff / track.offsetWidth * 100)) + '%)';
+            }, { passive: true });
+            track.addEventListener('touchend', function() {
+                track.style.transition = '';
+                if (Math.abs(diff) > 50) {
+                    goTo(idx + (diff < 0 ? 1 : -1));
+                } else {
+                    goTo(idx);
+                }
+                diff = 0;
+            });
+        });
+
+        /* Custom FAQ accordion */
+        function toggleFaq(btn) {
+            var item = btn.parentElement;
+            var isOpen = item.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.faq-item.active').forEach(function(el) {
+                el.classList.remove('active');
+            });
+
+            // Open clicked (if wasn't open)
+            if (!isOpen) {
+                item.classList.add('active');
+            }
+        }
+
+        AOS.init({
+            once: true,
+            offset: isMobile ? 30 : 80,
+            duration: isMobile ? 500 : 800,
+            disable: window.innerWidth < 380
+        });
+
+        /* ---- Theme Toggle ---- */
+        var savedTheme = localStorage.getItem('theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+
+        function createVanta(theme) {
+            if (vantaEffect) { vantaEffect.destroy(); vantaEffect = null; }
+            if (typeof VANTA === 'undefined') return;
+            var isDark = theme === 'dark';
+            vantaEffect = VANTA.NET({
+                el: "#header",
+                mouseControls: !isTouch,
+                touchControls: isTouch,
+                gyroControls: false,
+                minHeight: 200,
+                minWidth: 200,
+                scale: 1.0,
+                scaleMobile: 0.80,
+                color: isDark ? 0x6366f1 : 0x4f46e5,
+                backgroundColor: isDark ? 0x020617 : 0xf8fafc,
+                points: isMobile ? 6 : 12,
+                maxDistance: isMobile ? 18 : 22,
+                spacing: isMobile ? 22 : 18,
+                showDots: true
+            });
+        }
+
+        createVanta(savedTheme);
+
+        document.getElementById('themeToggle').addEventListener('click', function() {
+            var body = document.body;
+            var current = body.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            createVanta(next);
+        });
+
+        /* ---- Typed.js ---- */
+        new Typed('#typed-output', {
+            strings: [
+                'Full Stack Developer',
+                'Frontend Engineer',
+                'Backend Developer',
+                'React Developer',
+                'Laravel Developer',
+                'UI/UX Enthusiast'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2000,
+            loop: true,
+            showCursor: false
+        });
+
+        /* ---- Stats Counter Animation ---- */
+        var statsObserved = false;
+        var statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting && !statsObserved) {
+                    statsObserved = true;
+                    document.querySelectorAll('.stat-number').forEach(function(el) {
+                        var target = parseInt(el.getAttribute('data-target'));
+                        var start = 0;
+                        var duration = 1500;
+                        var startTime = null;
+                        function step(timestamp) {
+                            if (!startTime) startTime = timestamp;
+                            var progress = Math.min((timestamp - startTime) / duration, 1);
+                            var eased = 1 - Math.pow(1 - progress, 3);
+                            el.textContent = Math.floor(eased * target);
+                            if (progress < 1) {
+                                requestAnimationFrame(step);
+                            } else {
+                                el.textContent = target;
+                            }
+                        }
+                        requestAnimationFrame(step);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        var statsSection = document.querySelector('.stats-section');
+        if (statsSection) statsObserver.observe(statsSection);
+
+        /* ---- Three.js 3D Floating Geometries ---- */
+        (function() {
+            var canvas = document.getElementById('threejs-canvas');
+            if (!canvas || typeof THREE === 'undefined') return;
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+            var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+            renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+            var isDark = document.body.getAttribute('data-theme') === 'dark';
+
+            // Materials
+            var matPrimary = new THREE.MeshPhongMaterial({
+                color: 0x6366f1, transparent: true, opacity: 0.7,
+                shininess: 100, flatShading: true
+            });
+            var matAccent = new THREE.MeshPhongMaterial({
+                color: 0x06b6d4, transparent: true, opacity: 0.6,
+                shininess: 100, flatShading: true
+            });
+            var matWire = new THREE.MeshPhongMaterial({
+                color: 0x818cf8, transparent: true, opacity: 0.3,
+                wireframe: true
+            });
+
+            // Geometries
+            var meshes = [];
+            var geos = [
+                new THREE.IcosahedronGeometry(1.2, 0),
+                new THREE.OctahedronGeometry(0.9, 0),
+                new THREE.TetrahedronGeometry(0.8, 0),
+                new THREE.TorusGeometry(0.7, 0.3, 8, 16),
+                new THREE.DodecahedronGeometry(0.6, 0),
+                new THREE.TorusKnotGeometry(0.5, 0.18, 64, 8),
+                new THREE.IcosahedronGeometry(1.5, 1),
+                new THREE.BoxGeometry(0.8, 0.8, 0.8),
+                new THREE.ConeGeometry(0.6, 1.2, 6),
+                new THREE.OctahedronGeometry(0.7, 0),
+                new THREE.SphereGeometry(0.5, 8, 6),
+                new THREE.TetrahedronGeometry(0.65, 0)
+            ];
+            var mats = [matPrimary, matAccent, matWire, matPrimary, matAccent, matWire,
+                        matWire, matAccent, matPrimary, matWire, matPrimary, matAccent];
+
+            var count = isMobile ? 6 : 12;
+            for (var i = 0; i < count; i++) {
+                var mesh = new THREE.Mesh(geos[i % geos.length], mats[i % mats.length]);
+                mesh.position.set(
+                    (Math.random() - 0.5) * 14,
+                    (Math.random() - 0.5) * 8,
+                    (Math.random() - 0.5) * 6 - 2
+                );
+                mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+                mesh.userData = {
+                    speedX: (Math.random() - 0.5) * 0.008,
+                    speedY: (Math.random() - 0.5) * 0.008,
+                    rotX: (Math.random() - 0.5) * 0.01,
+                    rotY: (Math.random() - 0.5) * 0.01,
+                    floatOffset: Math.random() * Math.PI * 2
+                };
+                scene.add(mesh);
+                meshes.push(mesh);
+            }
+
+            // Lights
+            var ambientLight = new THREE.AmbientLight(0x404060, 0.6);
+            scene.add(ambientLight);
+            var dirLight = new THREE.DirectionalLight(0x6366f1, 0.8);
+            dirLight.position.set(5, 5, 5);
+            scene.add(dirLight);
+            var pointLight = new THREE.PointLight(0x06b6d4, 0.6, 20);
+            pointLight.position.set(-5, 3, 3);
+            scene.add(pointLight);
+
+            camera.position.z = 7;
+
+            // Mouse interaction
+            var mouseX = 0, mouseY = 0;
+            var sectionEl = document.querySelector('.threejs-section');
+            if (sectionEl) {
+                sectionEl.addEventListener('mousemove', function(e) {
+                    var rect = sectionEl.getBoundingClientRect();
+                    mouseX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+                    mouseY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+                });
+            }
+
+            // Animation
+            var clock = new THREE.Clock();
+
+            // Only animate when visible
+            var isAnimating = false;
+            var animFrameId = null;
+            function startAnim() {
+                if (isAnimating) return;
+                isAnimating = true;
+                animate();
+            }
+            function stopAnim() {
+                isAnimating = false;
+                if (animFrameId) cancelAnimationFrame(animFrameId);
+            }
+            // Override animate to use flag
+            function animate() {
+                if (!isAnimating) return;
+                animFrameId = requestAnimationFrame(animate);
+                var t = clock.getElapsedTime();
+                meshes.forEach(function(m) {
+                    m.rotation.x += m.userData.rotX;
+                    m.rotation.y += m.userData.rotY;
+                    m.position.y += Math.sin(t + m.userData.floatOffset) * 0.002;
+                    m.position.x += m.userData.speedX;
+                    if (m.position.x > 8) m.position.x = -8;
+                    if (m.position.x < -8) m.position.x = 8;
+                });
+                camera.position.x += (mouseX * 1.5 - camera.position.x) * 0.02;
+                camera.position.y += (-mouseY * 1.0 - camera.position.y) * 0.02;
+                camera.lookAt(scene.position);
+                renderer.render(scene, camera);
+            }
+            var threeObserver = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) { startAnim(); } else { stopAnim(); }
+            }, { threshold: 0.1 });
+            if (sectionEl) threeObserver.observe(sectionEl);
+
+            // Resize
+            window.addEventListener('resize', function() {
+                if (!canvas.parentElement) return;
+                var w = canvas.parentElement.clientWidth;
+                var h = canvas.parentElement.clientHeight;
+                camera.aspect = w / h;
+                camera.updateProjectionMatrix();
+                renderer.setSize(w, h);
+            });
+
+            // Theme change: update material colors
+            var origToggle = document.getElementById('themeToggle');
+            if (origToggle) {
+                origToggle.addEventListener('click', function() {
+                    setTimeout(function() {
+                        var dark = document.body.getAttribute('data-theme') === 'dark';
+                        matPrimary.color.setHex(dark ? 0x6366f1 : 0x4f46e5);
+                        matAccent.color.setHex(dark ? 0x06b6d4 : 0x0891b2);
+                        matWire.color.setHex(dark ? 0x818cf8 : 0x6366f1);
+                        dirLight.color.setHex(dark ? 0x6366f1 : 0x4f46e5);
+                        pointLight.color.setHex(dark ? 0x06b6d4 : 0x0891b2);
+                    }, 50);
+                });
+            }
+        })();
+
+        /* Vanilla Tilt 3D - only on non-touch devices */
+        if (!isTouch) {
+            VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+                max: 8,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.15,
+                perspective: 1200,
+                gyroscope: false
+            });
+
+            VanillaTilt.init(document.querySelectorAll(".tilt-code"), {
+                max: 12,
+                speed: 600,
+                glare: true,
+                "max-glare": 0.25,
+                perspective: 800,
+                gyroscope: false,
+                scale: 1.02
+            });
+
+            document.querySelector('.header').addEventListener('mousemove', function(e) {
+                var shapes = document.querySelectorAll('.shape');
+                var x = (e.clientX / window.innerWidth - 0.5) * 2;
+                var y = (e.clientY / window.innerHeight - 0.5) * 2;
+                shapes.forEach(function(shape, i) {
+                    var depth = (i + 1) * 15;
+                    shape.style.transform = 'translate(' + (x * depth) + 'px, ' + (y * depth) + 'px) rotate(' + (x * depth * 0.5) + 'deg)';
+                });
+            });
+        }
+    </script>
 </body>
 </html>

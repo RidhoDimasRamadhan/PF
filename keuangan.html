@@ -3,152 +3,108 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
+    <title>Store Finance Monitor | Ridho Dimas Ramadhan</title>
+    <meta name="description" content="Application to monitor finances for stores - built with PHP, jQuery, Bootstrap, and MySQL.">
+    <meta name="author" content="Ridho Dimas Ramadhan">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Ridho Dimas Ramadhan</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
+<body>
+
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark top-nav-collapse">
+        <div class="container-fluid px-3 px-lg-5">
+            <a class="navbar-brand logo-text" href="index.html">
+                <span class="brand-gradient">RD</span>
+            </a>
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/index.html">Projects</a>
+                        <a class="nav-link" href="index.html#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/CV/Resume_Ridho Dimas Ramadhan.pdf" download>CV</a>
+                        <a class="nav-link btn-nav" href="CV/Resume_Ridho Dimas Ramadhan.pdf" download>Download CV</a>
                     </li>
-              
                 </ul>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
+        </div>
+    </nav>
 
-
-    <!-- Header -->
-    <header class="ex-header">
+    <!-- Project Detail Header -->
+    <header class="detail-header">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h1>Application to monitor finances for stores</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                    <h1 class="detail-title">Store Finance Monitor</h1>
+                    <p class="detail-subtitle">Application to monitor finances for stores</p>
+                    <div class="detail-tech">
+                        <img src="images/details-icon-html.png" alt="HTML" title="HTML">
+                        <img src="images/details-icon-css.png" alt="CSS" title="CSS">
+                        <img src="images/php.png" alt="PHP" title="PHP">
+                        <img src="images/jquery.png" alt="jQuery" title="jQuery">
+                        <img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                        <img src="images/mysql.png" alt="MySQL" title="MySQL">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-
-
-
-    <div class="video-container">
-  <video controls  width="500" height="500" src="./Video/Keuangan.mp4"/>
-</div>
-    <!-- Modal for Enlarged Photo -->
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="enlargedImage">
-    </div>
-
- 
-    <!-- Basic -->
-    <div class="ex-basic-1 pt-3 pb-5">
+    <!-- Video Section -->
+    <section class="detail-content">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                   
+            <div class="video-wrapper">
+                <video controls preload="metadata">
+                    <source src="Video/Keuangan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn-primary-custom" href="index.html#projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+        </div>
+    </section>
 
-                    <a class="btn-solid-reg " href="index.html">Back</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of basic -->
-
-
-    <div class="footer bg-gray">
+    <!-- Footer -->
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="https://github.com/RidhoDimasRamadhan" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/ridhodimasr" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="www.linkedin.com/in/ridho-dimas-ramadhan" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+            <div class="footer-content text-center">
+                <div class="footer-social">
+                    <a href="https://github.com/RidhoDimasRamadhan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ridhodimasr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ridho-dimas-ramadhan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Ridho Dimas Ramadhan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Ridho Dimas Ramadhan</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-     <script src="https://kit.fontawesome.com/08692cf6f2.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://kit.fontawesome.com/08692cf6f2.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        if (!('ontouchstart' in window)) {
+            VanillaTilt.init(document.querySelectorAll(".video-wrapper"), {
+                max: 4, speed: 400, glare: true, "max-glare": 0.1, perspective: 1500
+            });
+        }
+    </script>
 </body>
 </html>
