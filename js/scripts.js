@@ -67,9 +67,9 @@
     $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
     $(window).scroll(function() {
         if ($(window).scrollTop() > 700) {
-            $('a.back-to-top').fadeIn('500');
+            $('a.back-to-top').addClass('show');
         } else {
-            $('a.back-to-top').fadeOut('500');
+            $('a.back-to-top').removeClass('show');
         }
     });
     $(document).on('click', 'a.back-to-top', function(e) {

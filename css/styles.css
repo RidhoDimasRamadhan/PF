@@ -373,15 +373,20 @@ body[data-theme="light"] .theme-toggle {
 /* Mobile: photo centered, prominent */
 @media (max-width: 991.98px) {
     .profile-photo-wrapper {
-        width: 160px;
-        height: 160px;
-        margin: 0 auto 1.5rem;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 1rem;
     }
 
     .hero-visual {
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
+        margin-top: 3rem;
         order: -1;
+    }
+
+    .header .row.min-vh-100 {
+        min-height: auto !important;
     }
 
     .header .row {
@@ -408,8 +413,9 @@ body[data-theme="light"] .theme-toggle {
 
 @media (max-width: 767.98px) {
     .profile-photo-wrapper {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0.75rem;
     }
 
     .profile-status {
@@ -749,6 +755,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     margin: 0;
     background-color: var(--bg-dark);
@@ -757,6 +768,9 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -1873,14 +1887,22 @@ a.back-to-top {
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    display: none;
     width: 44px;
     height: 44px;
     border-radius: var(--radius-sm);
     background: var(--gradient-primary);
     text-indent: -9999px;
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 0.4s ease, box-shadow 0.3s ease;
+}
+
+a.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
 }
 
 a.back-to-top::after {
@@ -1888,7 +1910,7 @@ a.back-to-top::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -30%) rotate(45deg);
     width: 10px;
     height: 10px;
     border-top: 2px solid white;
@@ -2093,7 +2115,11 @@ body[data-theme="light"] .stat-suffix {
 
     .theme-toggle {
         margin-left: auto;
-        margin-right: 12px;
+        margin-right: 10px;
+    }
+
+    .navbar .navbar-toggler {
+        margin-right: 4px;
     }
 
     /* Sections breathe less on tablet */
@@ -2123,9 +2149,15 @@ body[data-theme="light"] .stat-suffix {
 
     /* --- Hero --- */
     .header {
-        min-height: 100vh;
-        min-height: 100dvh;
-        padding-top: 5rem;
+        min-height: auto;
+        padding-top: 4.5rem;
+        padding-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    section, header, footer, .container, .container-fluid {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .header .container {
