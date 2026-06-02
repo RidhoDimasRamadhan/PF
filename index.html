@@ -338,6 +338,14 @@
 </head>
 <body data-spy="scroll" data-target=".fixed-top" data-theme="dark">
 
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <span class="loader-logo">RDR</span>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- SEO: noscript content for search engine crawlers -->
     <noscript>
         <div>
@@ -364,7 +372,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand logo-text page-scroll" href="#header">
-                <span class="brand-gradient">RD</span>
+                <span class="brand-gradient">RDR</span>
             </a>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <i class="fas fa-sun theme-icon-light"></i>
@@ -688,6 +696,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
                         <h4>MiniTrello</h4>
                         <p>Full Stack project management web app with kanban board, drag-and-drop, role-based access control, and real-time collaboration</p>
                         <div class="project-tech">
@@ -713,6 +722,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
                         <h4>Landing Page Product Showcase</h4>
                         <p>Dynamic product landing page with real-time variant switching, responsive design, and e-commerce platform integration</p>
                         <div class="project-tech">
@@ -737,6 +747,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
                         <h4>NaradaTrans Bus Fleet</h4>
                         <p>Full Stack bus fleet management web application built with MERN Stack (MongoDB, Express, React, Node.js)</p>
                         <div class="project-tech">
@@ -761,6 +772,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
                         <h4>Store Finance Monitor</h4>
                         <p>Backend-driven financial monitoring web application with income/expense tracking and reporting dashboard</p>
                         <div class="project-tech">
@@ -786,6 +798,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-frontend">Frontend</span>
                         <h4>Biseksi & Regula Falsi Calculator</h4>
                         <p>Frontend web application for mathematical calculation with interactive UI and real-time computation</p>
                         <div class="project-tech">
@@ -809,6 +822,7 @@
                         </a>
                     </div>
                     <div class="project-info">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
                         <h4>KotamuWisataku</h4>
                         <p>Full Stack tourism recommendation web app with Laravel backend, MySQL database, and responsive frontend design</p>
                         <div class="project-tech">
@@ -949,7 +963,7 @@
         <div class="container">
             <div class="footer-content text-center">
                 <div class="footer-logo">
-                    <span class="brand-gradient">RD</span>
+                    <span class="brand-gradient">RDR</span>
                 </div>
                 <p class="footer-text">Full Stack Developer — Frontend & Backend Web Development</p>
                 <div class="footer-social">
@@ -972,6 +986,35 @@
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        /* Page Loader */
+        function hideLoader() {
+            var loader = document.getElementById('pageLoader');
+            if (loader && !loader.classList.contains('loaded')) {
+                loader.classList.add('loaded');
+                setTimeout(function() { loader.style.display = 'none'; }, 500);
+            }
+        }
+        window.addEventListener('load', function() { setTimeout(hideLoader, 400); });
+        setTimeout(hideLoader, 3000);
+
+        /* Scroll Progress Bar */
+        (function() {
+            var progressBar = document.getElementById('scrollProgress');
+            var ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    requestAnimationFrame(function() {
+                        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                        var scrollPercent = (scrollTop / docHeight) * 100;
+                        progressBar.style.width = scrollPercent + '%';
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        })();
+
         /* Fix #5: Scroll to top on load */
         window.scrollTo(0, 0);
 
