@@ -422,6 +422,7 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- 3D Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -731,19 +732,14 @@
                             <span>2nd Place</span>
                         </div>
                         <h4>USB (Unlimited Software Builder) Competition</h4>
-                        <div class="gallery-slider">
-                            <div class="gallery-track">
-                                <img src="images/usb1.jpeg" alt="USB Competition 1">
-                                <img src="images/usb2.jpeg" alt="USB Competition 2">
-                                <img src="images/usb3.jpeg" alt="USB Competition 3">
-                                <img src="images/usb4.jpeg" alt="USB Competition 4">
+                        <div class="swiper gallery-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/usb1.jpeg" alt="USB Competition 1" onclick="openLightbox(this.src)"></div>
+                                <div class="swiper-slide"><img src="images/usb2.jpeg" alt="USB Competition 2" onclick="openLightbox(this.src)"></div>
+                                <div class="swiper-slide"><img src="images/usb3.jpeg" alt="USB Competition 3" onclick="openLightbox(this.src)"></div>
+                                <div class="swiper-slide"><img src="images/usb4.jpeg" alt="USB Competition 4" onclick="openLightbox(this.src)"></div>
                             </div>
-                            <div class="gallery-nav">
-                                <span class="gallery-dot active"></span>
-                                <span class="gallery-dot"></span>
-                                <span class="gallery-dot"></span>
-                                <span class="gallery-dot"></span>
-                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -754,17 +750,13 @@
                             <span>2nd Place</span>
                         </div>
                         <h4>Technology Innovation Competition</h4>
-                        <div class="gallery-slider">
-                            <div class="gallery-track">
-                                <img src="images/pmd1.jpeg" alt="PMD Competition 1">
-                                <img src="images/pmd2.jpeg" alt="PMD Competition 2">
-                                <img src="images/pmd3.jpeg" alt="PMD Competition 3">
+                        <div class="swiper gallery-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/pmd1.jpeg" alt="PMD Competition 1" onclick="openLightbox(this.src)"></div>
+                                <div class="swiper-slide"><img src="images/pmd2.jpeg" alt="PMD Competition 2" onclick="openLightbox(this.src)"></div>
+                                <div class="swiper-slide"><img src="images/pmd3.jpeg" alt="PMD Competition 3" onclick="openLightbox(this.src)"></div>
                             </div>
-                            <div class="gallery-nav">
-                                <span class="gallery-dot active"></span>
-                                <span class="gallery-dot"></span>
-                                <span class="gallery-dot"></span>
-                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -1082,6 +1074,7 @@
     <script src="https://kit.fontawesome.com/08692cf6f2.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         /* Page Loader */
         function hideLoader() {
@@ -1133,51 +1126,16 @@
             if (e.key === 'Escape') closeLightbox();
         });
 
-        /* Gallery Sliders */
-        document.querySelectorAll('.gallery-slider').forEach(function(slider) {
-            var track = slider.querySelector('.gallery-track');
-            var dots = slider.querySelectorAll('.gallery-dot');
-            var imgs = track.querySelectorAll('img');
-            var idx = 0;
-
-            function goTo(i) {
-                if (i < 0) i = imgs.length - 1;
-                if (i >= imgs.length) i = 0;
-                idx = i;
-                track.style.transition = 'transform 0.35s ease';
-                track.style.transform = 'translateX(-' + (idx * 100) + '%)';
-                dots.forEach(function(d, j) { d.classList.toggle('active', j === idx); });
-            }
-
-            // Dot clicks
-            dots.forEach(function(dot, i) {
-                dot.addEventListener('click', function() { goTo(i); });
-            });
-
-            // Click on track = lightbox (shows current image)
-            track.addEventListener('click', function() {
-                openLightbox(imgs[idx].src);
-            });
-
-            // Touch swipe (mobile only)
-            var startX = 0, diff = 0;
-            track.addEventListener('touchstart', function(e) {
-                startX = e.touches[0].clientX;
-                diff = 0;
-                track.style.transition = 'none';
-            }, { passive: true });
-            track.addEventListener('touchmove', function(e) {
-                diff = e.touches[0].clientX - startX;
-                track.style.transform = 'translateX(' + (-(idx * 100) + (diff / track.offsetWidth * 100)) + '%)';
-            }, { passive: true });
-            track.addEventListener('touchend', function() {
-                track.style.transition = '';
-                if (Math.abs(diff) > 50) {
-                    goTo(idx + (diff < 0 ? 1 : -1));
-                } else {
-                    goTo(idx);
-                }
-                diff = 0;
+        /* Gallery Swipers */
+        document.querySelectorAll('.gallery-swiper').forEach(function(el) {
+            new Swiper(el, {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                pagination: {
+                    el: el.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
             });
         });
 
