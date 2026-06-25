@@ -2531,7 +2531,8 @@ body[data-theme="light"] .stat-suffix {
     }
 
     .detail-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 
     .detail-tech img {
